@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#2261AE",
-        light: "#F7F7F7",
+        light: "#F9F9F9",
         grey: "#58595B",
         lgrey: "#9F9F9F",
         red: "#ED3237",
@@ -36,11 +36,19 @@ module.exports = {
         xl: "1280px",
         "2xl": "1536px",
       },
+      animation: {
+        slideDown: "slideDown 300ms ease-out",
+        slideUp: "slideUp 300ms ease-out",
+      },
 
       keyframes: {
-        float: {
-          "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-7px)" },
+        slideDown: {
+          from: { height: "0" },
+          to: { height: "var(--radix-collapsible-content-height)" },
+        },
+        slideUp: {
+          from: { height: "var(--radix-collapsible-content-height)" },
+          to: { height: "0" },
         },
       },
     },

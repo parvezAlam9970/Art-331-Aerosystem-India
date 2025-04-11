@@ -8,7 +8,7 @@ const MenuLinks = () => {
   const [activeSimple, setActiveSimple] = useState(null);
 
   return (
-    <div className="flex gap-3 xl:gap-5 justify-center items-center text-center">
+    <div className="flex gap-3 xl:gap-5 justify-center items-center text-center z-50">
       <ul className="text-white flex gap-3 xl:gap-5">
         {HeaderLinks.MENU_LINKS.map((item, indx) => {
           const hasChildren = !!item?.Children;
@@ -63,9 +63,6 @@ const MenuLinks = () => {
                   ))}
                 </ul>
               )}
-
-
-
                 </div>
               </div>
             );
@@ -108,7 +105,7 @@ const MenuLinks = () => {
                       </span>
                       <span className="flex items-center gap-2">
                         {child.name}
-                        <Icons.ARROW_LEFT className="-rotate-45" />
+                        <Icons.ARROW_RIGHT className="-rotate-45" />
                       </span>
                     </li>
                   ))}

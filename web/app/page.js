@@ -1,16 +1,15 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { Button } from "@/components/ui/button";
+import Beechcraft from "@/components/home/Beechcraft";
+import FeaturedAircraft from "@/components/home/FeaturedAircraft";
+import HomeBannerSLider from "@/components/home/HomeBannerSLider";
+import WelcomeTo from "@/components/home/WelcomeTo";
 
 export default function Home() {
   return (
-    <div className="  bg-black h-screen">
-      testing one
-      <div className=" p-32">
-      <Button>
-        hello
-      </Button>
-      </div>
-    </div>
+    <>
+    <HomeBannerSLider/>
+    <WelcomeTo/>
+    <FeaturedAircraft/>
+    <Beechcraft/>
+    </>
   );
 }
