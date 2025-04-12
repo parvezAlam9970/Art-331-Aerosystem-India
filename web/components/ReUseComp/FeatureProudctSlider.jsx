@@ -5,6 +5,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Image from "next/image";
 import SwiperPrevNextComp from "./SwiperPrevNextComp";
+import { cn } from "@/lib/utils";
 
 const images = [
   {
@@ -21,7 +22,7 @@ const images = [
   },
 ];
 
-const FeatureProudctSlider = () => {
+const FeatureProudctSlider = ({isLeftArrow=false,className}) => {
   const swiperRef = useRef(null);
 
   const handlePrev = () => {
@@ -47,7 +48,7 @@ const FeatureProudctSlider = () => {
         {images?.map((item, index) => {
           return (
             <SwiperSlide>
-              <div key={index} className="  w-full h-full mdP:h-[500px]">
+              <div key={index} className={cn("w-full h-full lg:h-[500px]",className)}>
                 <Image
                   src={item.src}
                   alt={index}
@@ -59,7 +60,7 @@ const FeatureProudctSlider = () => {
             </SwiperSlide>
           );
         })}
-        <div className=" absolute z-10 bottom-5 right-5  mdP:bottom-10 mdP:right-10">
+        <div className={`absolute z-20 ${isLeftArrow ? "bottom-5 left-5  lg:bottom-10 lg:left-10":"bottom-5 right-5  lg:bottom-10 lg:right-10"}`}>
           <SwiperPrevNextComp {...{ handleNext, handlePrev }} />
         </div>
       </Swiper>

@@ -6,12 +6,12 @@ import FeatureProudctSlider from "../ReUseComp/FeatureProudctSlider";
 
 const Beechcraft = () => {
   return (
-    <div className=" grid grid-cols-1 mdP:grid-cols-2  my-10 md:my-16">
-      <div>
-        <FeatureProudctSlider />
+    <div className=" grid grid-cols-1 lg:grid-cols-2 my-5  md:my-10 lg:my-20">
+      <div className=" order-2 lg:order-1">
+        <FeatureProudctSlider isLeftArrow={true}/>
       </div>
-      <div className="my-6 mdP:relative">
-        <div className=" h-full bg-white shadow-lightShadow   mdP:absolute mdP:top-0 w-full z-20 mr-[100px] ">
+      <div className="my-6 lg:relative order-1 lg:order-2">
+        <div className=" h-full bg-white shadow-lightShadow lg:-ml-14  lg:absolute lg:top-0 w-full z-10 ">
           <Container className={"py-10"}>
             <Heading>
               <b>Featured Aircraft </b>
