@@ -42,58 +42,89 @@ const Footer = () => {
           </div>
           <div className=" col-span-4">
             <div className=" grid grid-cols-4">
-               <div>One</div>
-               <div>Two</div>
-               <div>Three</div>
-               <div>Four</div>
+              <div>One</div>
+              <div>Two</div>
+              <div>Three</div>
+              <div>Four</div>
             </div>
             <div className=" grid grid-cols-4 mt-5">
-               <div>One</div>
-               <div>Two</div>
-               <div className=" col-span-2">Three</div>
+              <div>One</div>
+              <div>Two</div>
+              <div className=" col-span-2">Three</div>
             </div>
           </div>
         </div>
-      <div className=" my-10 grid grid-cols-4 gap-5 ">
-        <div className=" bg-[#414141] p-5 shadow-lightShadow ">one</div>
-        <div className=" bg-[#414141] p-5 shadow-lightShadow ">two</div>
-        <div className=" bg-[#414141] p-5 shadow-lightShadow ">three</div>
-        <div className=" bg-[#414141] p-5 shadow-lightShadow ">four</div>
-      </div>
-      <hr className="mt-5" />
-      <div className=" flex justify-between items-center text-center py-3 md:py-6 px-5 sm:px-0">
-        <div className="text-center  text-[13px] md:text-[14px] ">
-          <Link href='/'>
-            Terms & Conditions
-          </Link>
-          <span className="px-3"> | </span>
-          <Link href='/'>
-          Privacy Policy
-          </Link>
-        </div>
-        <div className="text-center  text-[13px] md:text-[14px] ">
-           © 2025. <strong> AEROSYSTEM India </strong> | All Rights Reserved.
-        </div>
-        <div className="text-center  text-[13px] md:text-[14px] flex gap-4 items-center  ">
-          <span className="text-[13px] md:text-[14px] font-medium">FOLLOW US</span>
-           <div className=" flex gap-2">
-             <div className=" border-[1px] rounded-full border-lgrey p-2">
-               <Icons.FACEBOOK className=" text-lgrey text-[18px]"/>
-             </div>
-             <div className=" border-[1px] rounded-full border-lgrey p-2">
-               <Icons.LINKEDIN className=" text-lgrey text-[18px]"/>
-             </div>
-             <div className=" border-[1px] rounded-full border-lgrey p-2">
-               <Icons.INSTAGRAM className=" text-lgrey text-[18px]"/>
-             </div>
-             <div className=" border-[1px] rounded-full border-lgrey p-2">
-               <Icons.YOUTUBE className=" text-lgrey text-[18px]"/>
-             </div>
-           </div>
-        </div>
-      </div>
-      </Container>
+        <div className=" my-10 grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 gap-5 ">
+          <div className=" bg-[#414141] p-4 shadow-lightShadow flex gap-5  ">
+            <div>
+              <Icons.LOCATION_PIN className="text-[28px]" />
+            </div>
+            <div className=" flex-1">
+              <span className=" font-bold">Address</span>
+              <p>219-220, gulabi bagh, delhi - 110007</p>
+            </div>
+          </div>
+          <div className=" bg-[#414141] p-4 shadow-lightShadow flex gap-5  ">
+            <div>
+              <Icons.CALL className="text-[28px]" />
+            </div>
+            <div className=" flex-1">
+              <span className=" font-bold">Phone</span>
+              <p>011-350-77777</p>
 
+              <p>011-350-77777</p>
+            </div>
+          </div>
+          <div className=" bg-[#414141] p-4 shadow-lightShadow flex gap-5  ">
+            <div>
+              <Icons.EMAIL className="text-[28px]" />
+            </div>
+            <div className=" flex-1">
+              <span className=" font-bold">Email</span>
+              <p>info@aerosapce.com</p>
+            </div>
+          </div>
+          <div className=" bg-[#414141] p-4 shadow-lightShadow flex gap-5  ">
+            <div>
+              <Icons.TIME className="text-[28px]" />
+            </div>
+            <div className=" flex-1">
+              <span className=" font-bold">Timing</span>
+              <p>Mon - Fri 09.30 - 17.30</p>
+            </div>
+          </div>
+        </div>
+        <hr className="mt-5" />
+        <div className=" flex justify-between flex-col gap-3 lg:gap-0 lg:flex-row items-center text-center py-3 md:py-6 px-5 sm:px-0">
+          <div className="text-center  text-[13px] md:text-[14px] ">
+            <Link href="/">Terms & Conditions</Link>
+            <span className="px-3"> | </span>
+            <Link href="/">Privacy Policy</Link>
+          </div>
+          <div className="text-center  text-[13px] md:text-[14px] ">
+            © 2025. <strong> AEROSYSTEM India </strong> | All Rights Reserved.
+          </div>
+          <div className="text-center  text-[13px] md:text-[14px] flex gap-4 items-center  ">
+            <span className="text-[13px] md:text-[14px] font-medium">
+              FOLLOW US
+            </span>
+            <div className=" flex gap-2">
+              <div className=" border-[1px] rounded-full border-lgrey p-2">
+                <Icons.FACEBOOK className=" text-lgrey text-[18px]" />
+              </div>
+              <div className=" border-[1px] rounded-full border-lgrey p-2">
+                <Icons.LINKEDIN className=" text-lgrey text-[18px]" />
+              </div>
+              <div className=" border-[1px] rounded-full border-lgrey p-2">
+                <Icons.INSTAGRAM className=" text-lgrey text-[18px]" />
+              </div>
+              <div className=" border-[1px] rounded-full border-lgrey p-2">
+                <Icons.YOUTUBE className=" text-lgrey text-[18px]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
     </footer>
   );
 };
