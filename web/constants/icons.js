@@ -16,6 +16,13 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineYoutube } from "react-icons/ai";
+import { LuMapPin } from "react-icons/lu";
+import { FiPhoneCall } from "react-icons/fi";
+import { MdOutlineEmail } from "react-icons/md";
+import { IoTimeOutline } from "react-icons/io5";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
+
 
 
 
@@ -47,6 +54,11 @@ export const Icons = {
     LINKEDIN: (props) => <FaLinkedinIn {...props} />,
     INSTAGRAM: (props) => <FaInstagram {...props} />,
     YOUTUBE: (props) => <AiOutlineYoutube {...props} />,
+    LOCATION_PIN: (props) => <LuMapPin {...props} />,
+    CALL: (props) => <FiPhoneCall {...props} />,
+    EMAIL: (props) => <MdOutlineEmail {...props} />,
+    TIME: (props) => <IoTimeOutline {...props} />,
+    RIGHT_CUVE_ARROW: (props) => <MdOutlineKeyboardArrowRight {...props} />,
     
 
 } 

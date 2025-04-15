@@ -2,6 +2,7 @@ import { Icons } from "@/constants/icons";
 import { HeaderLinks } from "@/constants/Links";
 import React, { useState } from "react";
 import { HeaderLinksData } from "@/constants/linkData";
+import Link from "next/link";
 
 const MenuLinks = () => {
   const [activeOverlay, setActiveOverlay] = useState(null);
@@ -95,6 +96,7 @@ const MenuLinks = () => {
                   }`}
                 >
                   {item.Children.map((child, idx) => (
+                    <Link href={child.path}>
                     <li
                       key={idx}
                       className="my-4 whitespace-nowrap flex gap-4 items-center text-[20px]"
@@ -108,6 +110,7 @@ const MenuLinks = () => {
                         <Icons.ARROW_RIGHT className="-rotate-45" />
                       </span>
                     </li>
+                    </Link>
                   ))}
                 </ul>
               )}
