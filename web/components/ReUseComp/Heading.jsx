@@ -4,7 +4,7 @@ import React from 'react'
 
 const Heading = ({children,className,isPlane=true,...rest}) => {
   return (
-    <h2 className={cn(" text-[22px] sm:text-[24px] flex gap-2  md:text-[28px] lg:text-[34px] items-center",className)} {...rest}>
+    <h2 className={cn(" text-[22px] sm:text-[24px] flex gap-2  md:text-[28px] lg:text-[34px] ",className)} {...rest}>
     {isPlane && <span>
         <Icons.PLANE className="rotate-45"/>
     </span> }

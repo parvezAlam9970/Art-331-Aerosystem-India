@@ -13,6 +13,7 @@ module.exports = {
         light: "#F9F9F9",
         grey: "#58595B",
         lgrey: "#9F9F9F",
+        mgrey: "#E3E3E3",
         red: "#ED3237",
         activecolor: "#0075cee9",
       },

@@ -17,7 +17,6 @@ export default function Home() {
     <WhatNew/>
     <OwnershipGuide/>
     <Associations/>
-    <KeepInTouch/>
     </>
   );
 }

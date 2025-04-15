@@ -4,13 +4,13 @@ import Heading from "../ReUseComp/Heading";
 import { GoHorizontalRule } from "react-icons/go";
 import Image from "next/image";
 
-const CeoFounderReuseComp = ({isReverse=false,desgination="",name=""}) => {
+const CeoFounderReuseComp = ({isReverse=false,desgination="",name="",title=""}) => {
 
     
 
   return (
     <div className=" grid grid-cols-1 mdP:grid-cols-2  gap-5">
-      <div className={`h-[350px] md:h-[530px] mdP:mr-14 ${isReverse ? " order-1 mdP:order-2" : " order-1"} `}>
+      <div className={`h-[350px] md:h-[480px] mdP:mr-14 ${isReverse ? " order-1 mdP:order-2" : " order-1"} `}>
         <div className="bg-light h-full relative ">
         <Image
           src="/image/plane4.jpg"
@@ -26,13 +26,9 @@ const CeoFounderReuseComp = ({isReverse=false,desgination="",name=""}) => {
         </div>
       </div>
       <div className={`py-3 mx-auto w-full max-w-custom-xl ${isReverse ? "order-1" : " order-2"}  mdP:pr-7 xl:pr-16 flex flex-col justify-center`}>
-        <Heading isPlane={false}>
-          Lalit Manilal
+        <Heading isPlane={false} className="mb-3 md:mb-10">
+          <b>{title }</b>
         </Heading>
-        <div className="flex gap-2 items-center pb-3">
-          <Icons.PLANE className=" text-2xl rotate-45" />
-          <span className="text-xl md:text-2xl ">Founder</span>
-        </div>
         <p className="py-2 text-sm md:text-base">
           Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting
           Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever

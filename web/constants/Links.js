@@ -88,7 +88,7 @@ export  const HeaderLinks = {
         },
         {
           name: "Media Gallery",
-          path: "/aerosystem/media",
+          path: "/aerosystem/gallery",
           id: 3.4,
           icons: <Icons.USERS />,
         },
