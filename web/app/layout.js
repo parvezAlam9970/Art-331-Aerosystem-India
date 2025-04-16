@@ -6,6 +6,7 @@ import WhatsAppButton from "@/components/custom/WhatsAppButton";
 import ScrollTopToBottom from "@/components/custom/ScrollTopToBottom";
 import CallButton from "@/components/custom/CallButton";
 import { Toaster } from "react-hot-toast";
+import KeepInTouch from "@/components/home/KeepInTouch";
 
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       >
       <Header/>
         {children}
+        <KeepInTouch/>
       <Footer/>
       {/* <WhatsAppButton/>
       <ScrollTopToBottom/>
