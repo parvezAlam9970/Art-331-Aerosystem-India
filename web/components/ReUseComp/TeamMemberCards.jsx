@@ -6,7 +6,7 @@ const TeamMemberCards = () => {
     <div className="relative group w-full cursor-pointer ">
       <div className="h-[415px] w-full bg-mgrey "></div>
 
-      <div className="absolute -bottom-3 w-[93%] bg-[#F0F0F0] px-4 py-3  transition-all duration-500 ease-in-out h-20 overflow-hidden group-hover:h-36">
+      <div className="absolute -bottom-3 w-[93%] bg-sgrey px-4 py-3  transition-all duration-500 ease-in-out h-20 overflow-hidden group-hover:h-36">
         <div className="text-black flex gap-2 justify-between">
           <div className=" mt-2">
             <h3 className=" text-xl  font-bold">Shriya Goyal</h3>

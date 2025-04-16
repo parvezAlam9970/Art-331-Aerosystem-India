@@ -21,6 +21,9 @@ import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoTimeOutline } from "react-icons/io5";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { FiDownload } from "react-icons/fi";
+import { IoImagesOutline } from "react-icons/io5";
+
 
 
 
@@ -50,6 +53,7 @@ export const Icons = {
     CIRCLE_CHECK: (props) => <FiCheckCircle {...props} />,
     PDF: (props) => <FaRegFilePdf {...props} />,
     DOWNLOAD: (props) => <MdDownload {...props} />,
+    DOWNLOAD_2: (props) => <FiDownload {...props} />,
     FACEBOOK: (props) => <FaFacebookF {...props} />,
     LINKEDIN: (props) => <FaLinkedinIn {...props} />,
     INSTAGRAM: (props) => <FaInstagram {...props} />,
@@ -59,6 +63,7 @@ export const Icons = {
     EMAIL: (props) => <MdOutlineEmail {...props} />,
     TIME: (props) => <IoTimeOutline {...props} />,
     RIGHT_CUVE_ARROW: (props) => <MdOutlineKeyboardArrowRight {...props} />,
+    IMG_OUTLINE: (props) => <IoImagesOutline {...props} />,
     
 
 } 
