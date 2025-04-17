@@ -2,22 +2,22 @@ export const HeaderLinksData = {
   CESSNA: [
     {
       name: "Skyhawk",
-      path: "/compliance/csr",
+      path: "/cessna",
       id: 2.1,
     },
     {
       name: "Skyhawk",
-      path: "/compliance/annual-report",
+      path: "/cessna",
       id: 2.2,
     },
     {
         name: "Skyhawk",
-        path: "/compliance/annual-report",
+        path: "/cessna",
         id: 2.2,
       },
        {
       name: "Skyhawk",
-      path: "/compliance/annual-report",
+      path: "/cessna",
       id: 2.2,
     },
   ],

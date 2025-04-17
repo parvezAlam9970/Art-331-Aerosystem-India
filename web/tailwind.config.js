@@ -44,14 +44,13 @@ module.exports = {
       },
 
       keyframes: {
-        slideDown: {
-          from: { height: "0" },
-          to: { height: "var(--radix-collapsible-content-height)" },
+        'slide-up': {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
-        slideUp: {
-          from: { height: "var(--radix-collapsible-content-height)" },
-          to: { height: "0" },
-        },
+      },
+      animation: {
+        'slide-up': 'slide-up 0.5s ease-out',
       },
     },
   },

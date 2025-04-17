@@ -50,7 +50,7 @@ const MenuLinks = () => {
                       </li>
                     ))}
                   </ul>
-                 <h2>new one</h2>
+                 <h2 className="py-10">new one</h2>
                  {HeaderLinksData[item.name] && (
                 <ul className="flex flex-col gap-6 text-lg">
                   {HeaderLinksData[item.name].map((child, idx) => (
@@ -59,7 +59,7 @@ const MenuLinks = () => {
                       className="hover:underline cursor-pointer transition-colors"
                       onClick={() => setActiveOverlay(null)}
                     >
-                      {child.name}
+                     <Link href={child.path} > {child.name} </Link>
                     </li>
                   ))}
                 </ul>

@@ -23,6 +23,9 @@ import { IoTimeOutline } from "react-icons/io5";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { FiDownload } from "react-icons/fi";
 import { IoImagesOutline } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
+import { MdMap } from "react-icons/md";
+
 
 
 
@@ -64,6 +67,8 @@ export const Icons = {
     TIME: (props) => <IoTimeOutline {...props} />,
     RIGHT_CUVE_ARROW: (props) => <MdOutlineKeyboardArrowRight {...props} />,
     IMG_OUTLINE: (props) => <IoImagesOutline {...props} />,
+    CLOSE: (props) => <IoClose {...props} />,
+    MAP: (props) => <MdMap {...props} />,
     
 
 } 

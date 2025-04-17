@@ -15,7 +15,7 @@ export  const HeaderLinks = {
       Children:[
         {
           name: "CSR",
-          path: "/compliance/csr",
+          path: "/cessna",
           id: 2.1,
         },
         {
@@ -82,7 +82,7 @@ export  const HeaderLinks = {
         },
         {
           name: "Achievements And Certifications.",
-          path: "/aerosystem/achievements",
+          path: "/aerosystem/achievements-certifications",
           id: 3.3,
           icons: <Icons.USERS />,
         },
