@@ -9,62 +9,51 @@ export  const HeaderLinks = {
     },
     {
       name: "CESSNA",
-      path: "/cessna",
+      path: "/",
       id: 2,
       type: "overlay",
       Children:[
         {
-          name: "CSR",
+          name: "Compare Models",
           path: "/cessna",
+          icons: <Icons.USERS />,
+
           id: 2.1,
         },
         {
-          name: "Annual Report",
+          name: "Range Map",
           path: "/compliance/annual-report",
+          icons: <Icons.MAP />,
+
           id: 2.2,
         },
       ]
     },
     {
       name: "BEECHCRAFT",
-      path: "/beechcraft",
+      path: "/",
       id: 3,
       type: "overlay",
       Children:[
-        {
-          name: "CSR",
-          path: "/compliance/csr",
-          id: 3.1,
-        },
-        {
-          name: "Annual Report",
-          path: "/compliance/annual-report",
-          id: 3.2,
-        },
-        {
-          name: "Notice",
-          path: "/compliance/notice",
-          id: 3.3,
-        },
       ]
     },
     {
       name: "SERVICES",
-      path: "/services",
+      path: "/",
       id: 4,
       type: "simple",
       Children:[
         {
           name: "Spares",
           path: "/services/spares",
-          id: 4.1,
+          id: 4.1,  
           icons: <Icons.USERS />,
         },       
       ]
     },
     {
       name: "AEROSYSTEM",
-      path: "/restricted-baggage",
+      path: "/",
       id: 5,  
       type: "simple",
       Children:[

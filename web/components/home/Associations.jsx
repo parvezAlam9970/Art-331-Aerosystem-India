@@ -19,7 +19,7 @@ const Associations = () => {
       </div>
       <div className=" grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-2 md:gap-5 mt-5">
          {
-            Array(8).fill().map((_,idx)=>{
+            Array(16).fill().map((_,idx)=>{
                 return (
                     <div key={ idx} className=" h-full md:h-[145px]">
                        <Image 
