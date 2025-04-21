@@ -1,10 +1,17 @@
+"use client"
+
 import React from "react";
 import Container from "../custom/Container";
 import Heading from "../ReUseComp/Heading";
 import { Icons } from "@/constants/icons";
 import ButtonWrapper from "../custom/ButtonWrapper";
+import { useDispatch } from "react-redux";
+import { openModal } from "@/redux-toolkit/slices/modal/modalSlices";
 
 const OverView = () => {
+ 
+    const dispatch = useDispatch()
+
   return (
     <Container className=" my-5 md:my-10 lg:my-16">
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -22,7 +29,7 @@ const OverView = () => {
             An Unknown Printer Took A Galley Of Type And Scrambled It To Make A
             Type Specimen Book.
           </p>
-          <p className="py-4  text-sm md:text-base">
+          <p className="py-4  text-sm md:text-base" >
             Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting
             Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text
             Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type
@@ -80,7 +87,7 @@ const OverView = () => {
             <div className="p-2 md:p-4 bg-[#E3E3E3]  flex justify-center items-center text-center">
               <Icons.MAP className=" text-[25px] md:text-[28px] text-grey" />
             </div>
-            <div className=" flex items-center justify-between w-full">
+            <div className=" flex items-center justify-between w-full" onClick={()=>dispatch(openModal({type : "RANGE_MAP_MODAL"}))}>
               <span className=" text-[18px] md:text-[21px] font-semibold">
                 Range Map
               </span>
@@ -94,7 +101,9 @@ const OverView = () => {
             <ButtonWrapper className="w-full" isOutline={true} isArrow={true}>
             Services
             </ButtonWrapper>
-            <ButtonWrapper className="w-full mt-3" isArrow={true}>
+            <ButtonWrapper className="w-full mt-3" isArrow={true}
+             onClick={()=>dispatch(openModal({ type : "EQUIRY_MODAL"}))}
+            >
             Enquiry Now
             </ButtonWrapper>
           </div>

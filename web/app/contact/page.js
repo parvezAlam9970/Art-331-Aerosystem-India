@@ -1,4 +1,5 @@
 import ContactComp from "@/components/contact/ContactComp";
+import GoogleMapContainer from "@/components/contact/GoogleMapContainer";
 import Container from "@/components/custom/Container";
 import Heading from "@/components/ReUseComp/Heading";
 import { Icons } from "@/constants/icons";
@@ -30,6 +31,7 @@ const ContactPage = () => {
         </div>
       </Container>
       <ContactComp/>
+      <GoogleMapContainer/>
     </div>
   );
 };
