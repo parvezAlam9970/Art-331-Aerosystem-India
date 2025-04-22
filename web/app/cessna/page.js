@@ -3,7 +3,9 @@ import NewFeatureOption from "@/components/cessna/NewFeatureOption";
 import OverView from "@/components/cessna/OverView";
 import StandardFeatures from "@/components/cessna/StandardFeatures";
 import Container from "@/components/custom/Container";
+import EnquiryModal from "@/components/custom/modal/EnquiryModal";
 import GalleryImgViewModal from "@/components/custom/modal/GalleryImgViewModal";
+import RangeMapModal from "@/components/custom/modal/RangeMapModal";
 import Heading from "@/components/ReUseComp/Heading";
 import SpecificationList from "@/components/ReUseComp/SpecificationList";
 import SwiperThumbSlider from "@/components/ReUseComp/SwiperThumbSlider";
@@ -113,8 +115,10 @@ const CessnaPage = () => {
       <CessnaGallery/>
 
 
-{/* gallery modal */}
-    <GalleryImgViewModal type={"IMG_VIEW"} />
+    {/* M   o d a l s */}
+    <GalleryImgViewModal type={"IMG_VIEW"} /> 
+    <EnquiryModal type={"EQUIRY_MODAL"} />
+    <RangeMapModal type={"RANGE_MAP_MODAL"} />
       
     </div>
   );
