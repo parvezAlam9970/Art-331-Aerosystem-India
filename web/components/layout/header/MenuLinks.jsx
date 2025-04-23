@@ -48,7 +48,7 @@ const MenuLinks = () => {
                       <li
                         key={idx}
                         className="my-4 whitespace-nowrap flex gap-4 items-center text-[20px]"
-                        onClick={() => setActiveSimple(null)}
+                        onClick={() => setActiveOverlay(null)}
                       >
                         <span className="border-[1px] border-grey flex justify-center items-center p-2 text-lgrey rounded-md line-clamp-1">
                           {child.icons}

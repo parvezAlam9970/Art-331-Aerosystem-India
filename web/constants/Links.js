@@ -15,7 +15,7 @@ export  const HeaderLinks = {
       Children:[
         {
           name: "Compare Models",
-          path: "/cessna",
+          path: "/compare-models",
           icons: <Icons.USERS />,
 
           id: 2.1,
