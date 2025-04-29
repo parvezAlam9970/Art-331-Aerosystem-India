@@ -8,6 +8,7 @@ import CallButton from "@/components/custom/CallButton";
 import { Toaster } from "react-hot-toast";
 import KeepInTouch from "@/components/home/KeepInTouch";
 import ReduxToolkitProvider from "@/redux-toolkit/provider/ReduxToolkitProvider";
+import SideButton from "@/components/custom/SideButton";
 
 export const metadata = {
   title: "AEROSPARES AEROSYSTEM",
@@ -24,6 +25,8 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <KeepInTouch />
+          <SideButton/>
+
           <Footer />
           {/* <WhatsAppButton/>
       <ScrollTopToBottom/>
