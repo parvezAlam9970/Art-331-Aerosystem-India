@@ -25,6 +25,7 @@ import { FiDownload } from "react-icons/fi";
 import { IoImagesOutline } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { MdMap } from "react-icons/md";
+import { IoMdPin } from "react-icons/io";
 
 
 
@@ -69,6 +70,7 @@ export const Icons = {
     IMG_OUTLINE: (props) => <IoImagesOutline {...props} />,
     CLOSE: (props) => <IoClose {...props} />,
     MAP: (props) => <MdMap {...props} />,
+    FILLED_MAP:(props) => <IoMdPin {...props} />,
     
 
 } 
